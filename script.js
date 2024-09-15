@@ -3,7 +3,15 @@ let interest = document.getElementById('interest');
 
 
 button.addEventListener('click', () => {
-    alert('Да, просто alert()')
+    var x = prompt('Введи координату X');
+    var y = prompt('Введи координату Y');
+
+    if ((x*x + y*y) <= 1) {
+        alert('Вы попали в мишень!')
+    }
+    else {
+        alert('Не попал ты, дружище...')
+    }
 })
 
 interest.addEventListener('click', () => {
